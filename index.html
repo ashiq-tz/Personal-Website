@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h3></h3>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#hobbies">Hobbies</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contanct</a></li>
+                    <i class="bi bi-x-lg" onclick="closemenu()"></i>
+                </ul>
+                <i class="bi bi-list" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Developer/Designer</p>
+                <h1>Hi, I'm <span>Mohammed Ashiq</span></h1>
+            </div>
+        </div>
+    </div>
+    <!-- ----------about ------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="assets/profile.webp" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Diploma graduate in Electrical and Electronics Engineering with a strong passion for technology and continuous learning. Currently self-learning the MERN stack, focusing on developing full-stack web applications. Driven to build a career in software development by combining problem-solving skills and technical expertise</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML/CSS</span><br>Creating responsive and visually appealing websites</li>
+                            <li><span>Video Editing</span><br>Crafting professional-quality videos</li>
+                            <li><span>Logo Creation</span><br>Creating awesome logos </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-2023</span><br>Diploma in EEE</li>
+                            <li><span>2018-2020</span><br>+2</li>
+                            <li><span>2018</span><br>SSLC</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------Services------------------>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="bi bi-palette"></i>
+                    <h2>Web Designing</h2>
+                    <p>Creating responsive and visually appealing websites using HTML, CSS, and JavaScript. Ensuring seamless user experiences with intuitive layouts and dynamic features.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="bi bi-camera-reels"></i>
+                    <h2>Video Editing</h2>
+                    <p>Crafting professional-quality videos with smooth transitions, engaging effects, and precise timing. Specializing in storytelling through visuals to captivate audiences.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="bi bi-asterisk"></i>
+                    <h2>Logo Design</h2>
+                    <p>Designing unique and memorable logos that capture the essence of a brand, using creative and modern design techniques.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!------------------Hobbies------------------>
+    <div id="hobbies">
+        <div class="container">
+            <h1 class="sub-title">Hobbies</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="assets/hob4.jpg" alt="">
+                    <div class="layer">
+                        <h3>Movies</h3>
+                        <p>Enjoying diverse genres and storytelling, movies provide entertainment and inspiration.</p>
+
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/hob5.jpg" alt="">
+                    <div class="layer">
+                        <h3>Videography</h3>
+                        <p>Capturing moments and creativity through the lens, blending art and technology.</p>
+                        
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/hob3.jpg" alt="">
+                    <div class="layer">
+                        <h3>Books</h3>
+                        <p>Exploring worlds, ideas, and knowledge, fostering imagination and learning.
+                        </p>
+                       
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!------------------Portfolio------------------>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Portfolio</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="assets/work1.webp" alt="">
+                    <div class="layer">
+                        <h3>Amazon clone</h3>
+                        <p>A static website featuring a simple and organized product grid layout, presenting Amazon's vast selection in an easy-to-browse format.</p>
+                        <a href="https://ashiq-tz.github.io/Amazon-clone/ "><i class="bi bi-box-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/work2.webp" alt="">
+                    <div class="layer">
+                        <h3>Starbucks clone</h3>
+                        <p>A static website designed with a clean and straightforward menu grid, showcasing Starbucks' beverages and store locations with minimal interaction.</p>
+                        <a href="https://ashiq-tz.github.io/Starbucks-clone/"><i class="bi bi-box-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/work3.webp" alt="">
+                    <div class="layer">
+                        <h3>SpaceX clone</h3>
+                        <p>A static website with a visually appealing grid layout, highlighting SpaceX's rocket designs, missions, and technological milestones in a streamlined, user-friendly format.</p>
+                        <a href="https://ashiq-tz.github.io/SpaceX/"><i class="bi bi-box-arrow-up-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+     <!------------------Contact------------------>
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="bi bi-send-fill"></i>ashiqthazhath@gmail.com</p>
+                    <p><i class="bi bi-telephone-fill"></i>9747637630</p>
+                    <!-------------SOCIAL--------------->
+                    <div class="social">
+                        <a href="https://www.linkedin.com/in/mohammed-ashiq-556751299?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://www.instagram.com/ashiiiiq_?igsh=czV2eXZ1MmFqcmZ6"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.facebook.com/?_rdr"><i class="bi bi-facebook"></i></a>
+                        <a href="https://x.com/?lang=en"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Ashiq.</p>
+        </div>
+     </div>
+
+</body>
+    <script src="index.js"></script>
+    
+</html>
